@@ -3,7 +3,7 @@ import type { Context } from "@actions/github/lib/context"
 export async function run({ context }: { context: Context }) {
   console.log("Payload: ", JSON.stringify(context.payload, null, 2))
 
-  console.log("Action: ", context.action)
+  console.log("Event name: ", context.eventName)
 
   // output action-specific debug info
   if (context.eventName === "pull_request") {
