@@ -29852,6 +29852,7 @@ function run(_a) {
             }
             if (context.eventName === "delete") {
                 console.log("Ref: ", context.payload.ref);
+                console.log("Delete: ", context.payload.delete);
                 console.log("Ref type: ", context.payload.ref_type);
             }
             if (context.eventName === "create") {

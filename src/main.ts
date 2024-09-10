@@ -19,6 +19,7 @@ export async function run({ context }: { context: Context }) {
 
   if (context.eventName === "delete") {
     console.log("Ref: ", context.payload.ref)
+    console.log("Delete: ", context.payload.delete)
     console.log("Ref type: ", context.payload.ref_type)
   }
 
