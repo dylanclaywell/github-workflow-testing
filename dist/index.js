@@ -29839,7 +29839,7 @@ function run(_a) {
         var context = _b.context;
         return __generator(this, function (_g) {
             console.log("Payload: ", JSON.stringify(context.payload, null, 2));
-            console.log("Action: ", context.action);
+            console.log("Event name: ", context.eventName);
             // output action-specific debug info
             if (context.eventName === "pull_request") {
                 console.log("PR number: ", (_c = context.payload.pull_request) === null || _c === void 0 ? void 0 : _c.number);
