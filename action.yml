@@ -1,0 +1,15 @@
+name: "Configure Project Issue"
+description: "This configures the issue that triggered this action in the given project"
+inputs:
+  project-name:
+    description: "The name of the project to configure the issue for"
+    required: true
+  label:
+    description: "An optional filter to only configure issues with this label"
+    required: false
+  auth-token:
+    description: "The GitHub token to use for authentication"
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"
